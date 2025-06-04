@@ -1,0 +1,17 @@
+[
+  {
+    "AssetId": "A-1001",
+    "AssetType": "Industrial Motor",
+    "Location": "Factory Alpha"
+  },
+  {
+    "AssetId": "A-1002",
+    "AssetType": "Conveyor Belt System",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1003",
+    "AssetType": "Hydraulic Press",
+    "Location": "Factory Gamma"
+  }
+]
