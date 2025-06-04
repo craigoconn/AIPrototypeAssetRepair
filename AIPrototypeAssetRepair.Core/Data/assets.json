@@ -13,5 +13,190 @@
     "AssetId": "A-1003",
     "AssetType": "Hydraulic Press",
     "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1004",
+    "AssetType": "Cooling System",
+    "Location": "Factory Delta"
+  },
+  {
+    "AssetId": "A-1005",
+    "AssetType": "Pneumatic Actuator",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1006",
+    "AssetType": "Servo Motor",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1007",
+    "AssetType": "Crane System",
+    "Location": "Factory Alpha"
+  },
+  {
+    "AssetId": "A-1008",
+    "AssetType": "Electrical Panel",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1009",
+    "AssetType": "Gearbox Assembly",
+    "Location": "Factory Delta"
+  },
+  {
+    "AssetId": "A-1010",
+    "AssetType": "Temperature Sensor Array",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1011",
+    "AssetType": "Programmable Logic Controller (PLC)",
+    "Location": "Factory Alpha"
+  },
+  {
+    "AssetId": "A-1012",
+    "AssetType": "Hydraulic Valve",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1013",
+    "AssetType": "Motor Controller",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1014",
+    "AssetType": "Cooling Fan Unit",
+    "Location": "Factory Delta"
+  },
+  {
+    "AssetId": "A-1015",
+    "AssetType": "Drive Motor",
+    "Location": "Factory Alpha"
+  },
+  {
+    "AssetId": "A-1016",
+    "AssetType": "Conveyor Roller Assembly",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1017",
+    "AssetType": "Hydraulic Cylinder",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1018",
+    "AssetType": "Safety System Controller",
+    "Location": "Factory Delta"
+  },
+  {
+    "AssetId": "A-1019",
+    "AssetType": "Belt Tensioner",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1020",
+    "AssetType": "Motor Bearing Set",
+    "Location": "Factory Alpha"
+  },
+  {
+    "AssetId": "A-1021",
+    "AssetType": "Control Panel Interface",
+    "Location": "Factory Delta"
+  },
+  {
+    "AssetId": "A-1022",
+    "AssetType": "Electrical Relay Unit",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1023",
+    "AssetType": "Lubrication System",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1024",
+    "AssetType": "Hydraulic Fluid Reservoir",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1025",
+    "AssetType": "Motor Cooling System",
+    "Location": "Factory Alpha"
+  },
+  {
+    "AssetId": "A-1026",
+    "AssetType": "Vision System Camera",
+    "Location": "Factory Delta"
+  },
+  {
+    "AssetId": "A-1027",
+    "AssetType": "Power Supply Unit",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1028",
+    "AssetType": "Torque Sensor",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1029",
+    "AssetType": "Conveyor Drive Motor",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1030",
+    "AssetType": "Hydraulic Pressure Valve",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1031",
+    "AssetType": "Temperature Controller",
+    "Location": "Factory Alpha"
+  },
+  {
+    "AssetId": "A-1032",
+    "AssetType": "PLC Interface Module",
+    "Location": "Factory Delta"
+  },
+  {
+    "AssetId": "A-1033",
+    "AssetType": "Belt Alignment System",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1034",
+    "AssetType": "Motor Starter Relay",
+    "Location": "Factory Alpha"
+  },
+  {
+    "AssetId": "A-1035",
+    "AssetType": "Hydraulic Pump",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1036",
+    "AssetType": "Cooling Duct",
+    "Location": "Factory Delta"
+  },
+  {
+    "AssetId": "A-1037",
+    "AssetType": "Sensor Array",
+    "Location": "Factory Beta"
+  },
+  {
+    "AssetId": "A-1038",
+    "AssetType": "Servo Drive Controller",
+    "Location": "Factory Gamma"
+  },
+  {
+    "AssetId": "A-1039",
+    "AssetType": "Industrial Fan",
+    "Location": "Factory Delta"
+  },
+  {
+    "AssetId": "A-1040",
+    "AssetType": "Vibration Sensor",
+    "Location": "Factory Alpha"
   }
 ]

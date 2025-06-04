@@ -4,5 +4,11 @@
     "AssetId": "A-1001",
     "FailureDescription": "The motor is overheating and making grinding noises.",
     "ReportedAt": "2025-05-30T07:45:00"
+  },
+  {
+    "EventId": "E-5002",
+    "AssetId": "A-1003",
+    "FailureDescription": "Sparks are flying out of the machine",
+    "ReportedAt": "2025-05-30T08:45:00"
   }
 ]

@@ -10,7 +10,8 @@ namespace AIPrototypeAssetRepair
             List<Contractor> contractors,
             RepairEvent currentEvent,
             List<RepairLog> repairLogs,
-            List<RepairLog> similarLogs)
+            List<RepairLog> similarLogs,
+            List<(Contractor contractor, double score, List<RepairLog> logs)>? rankedContractors = null)
         {
             var sb = new StringBuilder();
 
@@ -65,6 +66,27 @@ namespace AIPrototypeAssetRepair
             sb.AppendLine();
 
             // Final instruction for response format
+
+            // Top Contractor Rankings
+            if (rankedContractors != null && rankedContractors.Any())
+            {
+                sb.AppendLine("Contractor Rankings (based on relevance to similar past repairs):");
+
+                int rank = 1;
+                foreach (var (contractor, score, logs) in rankedContractors)
+                {
+                    var avgDuration = logs.Any()
+                        ? logs.Average(log => (log.RepairEndedAt - log.RepairStartedAt).TotalMinutes)
+                        : 0;
+
+                    sb.AppendLine($"{rank}. {contractor.Name} (Score: {score:F2})");
+                    sb.AppendLine($"   - Base: {contractor.BaseLocation}, Skills: {string.Join(", ", contractor.Skills)}");
+                    sb.AppendLine($"   - Matching Logs: {logs.Count}, Avg Repair Time: {avgDuration:F0} min");
+                    rank++;
+                }
+
+                sb.AppendLine();
+            }
             sb.AppendLine("Recommendation Instructions:");
             sb.AppendLine("Respond with:");
             sb.AppendLine("1. A brief recommendation of the best contractor(s).");

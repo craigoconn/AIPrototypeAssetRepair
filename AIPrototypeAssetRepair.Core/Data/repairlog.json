@@ -62,5 +62,558 @@
     "RepairStartedAt": "2025-05-08T12:00:00",
     "RepairEndedAt": "2025-05-08T14:00:00",
     "Notes": "Motor making low whirring sound under load. Found loose mounting bolts causing vibration. Retorqued and re-tested."
+  },
+  {
+    "EventId": "E-5001",
+    "AssetId": "A-1004",
+    "ContractorName": "Ella James",
+    "RepairStartedAt": "2025-05-25T08:30:00",
+    "RepairEndedAt": "2025-05-25T11:15:00",
+    "Notes": "Performed routine lubrication of all mechanical joints on conveyor system. During inspection, found minor pitting on the right-side gear coupling. Lubricated affected area and scheduled full coupling replacement for next maintenance cycle to prevent eventual failure under continuous load."
+  },
+  {
+    "EventId": "E-5002",
+    "AssetId": "A-1005",
+    "ContractorName": "Frank Lin",
+    "RepairStartedAt": "2025-05-26T09:00:00",
+    "RepairEndedAt": "2025-05-26T10:45:00",
+    "Notes": "Noticed audible hissing during operation; traced to an air leak in the pneumatic actuator chamber. Replaced faulty rubber gasket and re-pressurized system. Conducted functional test under normal operational pressure to confirm no further leaks. System passed diagnostics."
+  },
+  {
+    "EventId": "E-5003",
+    "AssetId": "A-1006",
+    "ContractorName": "Sophia Lee",
+    "RepairStartedAt": "2025-05-27T13:00:00",
+    "RepairEndedAt": "2025-05-27T16:00:00",
+    "Notes": "Emergency call due to production line shutdown. Diagnosed failed proximity sensor on robotic arm. Sensor was returning null values. Removed and replaced with OEM component. Calibrated sensor range and retested full movement cycle. Confirmed alignment within manufacturer specs."
+  },
+  {
+    "EventId": "E-5004",
+    "AssetId": "A-1007",
+    "ContractorName": "Michael Patel",
+    "RepairStartedAt": "2025-05-28T07:45:00",
+    "RepairEndedAt": "2025-05-28T09:30:00",
+    "Notes": "Reported excessive vibration on cooling fan assembly. Disassembled unit and found unbalanced blades due to buildup of debris. Cleaned and rebalanced blades, replaced damaged mounting grommets. Post-repair vibration analysis showed performance within acceptable limits."
+  },
+  {
+    "EventId": "E-5005",
+    "AssetId": "A-1008",
+    "ContractorName": "Grace Kim",
+    "RepairStartedAt": "2025-05-29T10:15:00",
+    "RepairEndedAt": "2025-05-29T12:00:00",
+    "Notes": "User reported abnormal noise from hydraulic press. Discovered partially collapsed hydraulic hose causing pressure fluctuations. Replaced hose and secured all fittings. Ran three full press cycles to confirm stability and proper operation under peak load."
+  },
+  {
+    "EventId": "E-5006",
+    "AssetId": "A-1009",
+    "ContractorName": "Liam Davis",
+    "RepairStartedAt": "2025-05-30T11:00:00",
+    "RepairEndedAt": "2025-05-30T13:00:00",
+    "Notes": "Inspection revealed wear on linear actuator rail. Applied dry lubricant and resurfaced minor scratches. Technician also found bolts on actuator housing were slightly loose; re-tightened all with torque wrench to spec. Scheduled follow-up inspection in 30 days."
+  },
+  {
+    "EventId": "E-5007",
+    "AssetId": "A-1010",
+    "ContractorName": "Nora Alston",
+    "RepairStartedAt": "2025-05-31T08:00:00",
+    "RepairEndedAt": "2025-05-31T10:15:00",
+    "Notes": "Routine check identified failing capacitor in main control board causing voltage irregularities. Replaced capacitor bank and updated firmware to latest stable version. Performed full boot cycle test and confirmed correct voltage output across all modules."
+  },
+  {
+    "EventId": "E-5008",
+    "AssetId": "A-1011",
+    "ContractorName": "Henry Zhao",
+    "RepairStartedAt": "2025-06-01T14:00:00",
+    "RepairEndedAt": "2025-06-01T16:30:00",
+    "Notes": "Machine was intermittently failing to start. Root cause traced to degraded wiring insulation in start-up relay harness. Replaced harness and secured connectors with dielectric grease. Verified reliable start-up across five consecutive cold starts."
+  },
+  {
+    "EventId": "E-5009",
+    "AssetId": "A-1012",
+    "ContractorName": "Isla Torres",
+    "RepairStartedAt": "2025-06-02T09:00:00",
+    "RepairEndedAt": "2025-06-02T11:00:00",
+    "Notes": "Complaints of inconsistent water pressure in washer line. Opened valve housing and found mineral deposits restricting flow. Performed chemical descaling and installed inline sediment filter to prevent recurrence. Pressure returned to expected PSI range."
+  },
+  {
+    "EventId": "E-5010",
+    "AssetId": "A-1013",
+    "ContractorName": "Jacob Wright",
+    "RepairStartedAt": "2025-06-03T07:30:00",
+    "RepairEndedAt": "2025-06-03T09:00:00",
+    "Notes": "Preventative maintenance on belt tensioning system. Adjusted belt slack to manufacturer’s specification and replaced worn tension spring. Applied threadlocker to adjustment bolt to reduce risk of future loosening during vibration-heavy operation."
+  },
+  {
+    "EventId": "E-5011",
+    "AssetId": "A-1014",
+    "ContractorName": "Amanda Blake",
+    "RepairStartedAt": "2025-06-03T13:00:00",
+    "RepairEndedAt": "2025-06-03T15:30:00",
+    "Notes": "System fault indicated high internal temperature on packaging line. Upon inspection, cooling fans were coated with dust and airflow was severely restricted. Dismantled fan unit, performed deep cleaning of fan blades, filters, and housing. Verified operation and monitored internal temperature—now within standard thresholds."
+  },
+  {
+    "EventId": "E-5012",
+    "AssetId": "A-1015",
+    "ContractorName": "Devon Grant",
+    "RepairStartedAt": "2025-06-04T08:00:00",
+    "RepairEndedAt": "2025-06-04T10:00:00",
+    "Notes": "Technician responded to reports of sporadic conveyor stoppages. Diagnosed timing sensor with intermittent failure due to internal corrosion. Removed sensor assembly, cleaned wiring terminals, and installed new unit. Tested belt under load for 30 minutes; no further interruptions observed."
+  },
+  {
+    "EventId": "E-5013",
+    "AssetId": "A-1016",
+    "ContractorName": "Olivia Martinez",
+    "RepairStartedAt": "2025-06-04T11:00:00",
+    "RepairEndedAt": "2025-06-04T13:45:00",
+    "Notes": "Observed oil leakage beneath hydraulic press station. Source identified as worn-out shaft seal on main hydraulic cylinder. Depressurized system, removed cylinder head, and replaced seal with high-temperature resistant part. Topped off hydraulic fluid and ran 10 test cycles—no leaks found."
+  },
+  {
+    "EventId": "E-5014",
+    "AssetId": "A-1017",
+    "ContractorName": "Marcus O'Neill",
+    "RepairStartedAt": "2025-06-04T14:30:00",
+    "RepairEndedAt": "2025-06-04T16:00:00",
+    "Notes": "Automated arm movement was lagging during final pick phase. Conducted motor diagnostics and discovered one drive motor was operating at reduced torque due to faulty encoder. Encoder replaced and drive recalibrated. Performance restored to optimal speed and accuracy."
+  },
+  {
+    "EventId": "E-5015",
+    "AssetId": "A-1018",
+    "ContractorName": "Sasha Rivera",
+    "RepairStartedAt": "2025-06-05T07:30:00",
+    "RepairEndedAt": "2025-06-05T09:15:00",
+    "Notes": "Noise detected in overhead crane pulley system. Visual inspection revealed cracked bearing housing on left side roller. Removed old housing, installed new reinforced aluminum model, lubricated shaft, and re-tensioned pulley cable. Crane passed all safety checks post-repair."
+  },
+  {
+    "EventId": "E-5016",
+    "AssetId": "A-1019",
+    "ContractorName": "Tyler Singh",
+    "RepairStartedAt": "2025-06-05T10:00:00",
+    "RepairEndedAt": "2025-06-05T12:30:00",
+    "Notes": "Operator reported erratic voltage readings on control panel. Isolated issue to failing voltage regulator inside power cabinet. Replaced with a new digital regulator and re-ran diagnostics. All readings returned to within 2% tolerance across test loads."
+  },
+  {
+    "EventId": "E-5017",
+    "AssetId": "A-1020",
+    "ContractorName": "Chloe Emerson",
+    "RepairStartedAt": "2025-06-06T08:15:00",
+    "RepairEndedAt": "2025-06-06T10:45:00",
+    "Notes": "Detected excessive backlash in gear train during idle phase. Upon disassembly, found that two intermediate gears were missing retention clips, allowing axial movement. Installed new clips, applied threadlock on mounts, and re-synchronized the drive. No abnormal motion noted after rebuild."
+  },
+  {
+    "EventId": "E-5018",
+    "AssetId": "A-1021",
+    "ContractorName": "Noah Fields",
+    "RepairStartedAt": "2025-06-06T11:30:00",
+    "RepairEndedAt": "2025-06-06T13:00:00",
+    "Notes": "Inspection after storm revealed moisture ingress into outdoor panel box. Found cracked seal on junction enclosure. Replaced weatherproof gasket and added desiccant packs to internal compartments. Conducted continuity checks on all circuits—readings stable and safe."
+  },
+  {
+    "EventId": "E-5019",
+    "AssetId": "A-1022",
+    "ContractorName": "Zara Blake",
+    "RepairStartedAt": "2025-06-07T07:45:00",
+    "RepairEndedAt": "2025-06-07T09:45:00",
+    "Notes": "Routine thermal imaging scan detected hotspot on terminal block. Investigation confirmed terminal screw had loosened over time, causing resistance heat. Cleaned contact surface, re-tightened connections, and monitored temperature during peak usage—no further heat anomalies observed."
+  },
+  {
+    "EventId": "E-5020",
+    "AssetId": "A-1023",
+    "ContractorName": "Ethan Clarke",
+    "RepairStartedAt": "2025-06-07T10:30:00",
+    "RepairEndedAt": "2025-06-07T12:30:00",
+    "Notes": "Primary control panel failed to respond to user input. Traced issue to software hang from recent update. Rolled back to previous stable firmware version and performed clean reinstall of control software. Verified touchscreen responsiveness and restored system to full functionality."
+  },
+  {
+    "EventId": "E-5021",
+    "AssetId": "A-1024",
+    "ContractorName": "Lena Morris",
+    "RepairStartedAt": "2025-06-08T08:00:00",
+    "RepairEndedAt": "2025-06-08T10:15:00",
+    "Notes": "Alarm was triggered due to unexpected pressure drop in the pneumatic press system. Upon inspection, a hairline crack was discovered on a T-connector in the main air line. Replaced connector with reinforced brass component and ran pressure retention test—results showed full integrity restored."
+  },
+  {
+    "EventId": "E-5022",
+    "AssetId": "A-1025",
+    "ContractorName": "Derrick Han",
+    "RepairStartedAt": "2025-06-08T11:00:00",
+    "RepairEndedAt": "2025-06-08T13:45:00",
+    "Notes": "Production stoppage reported on filling line. Found the auger motor controller unresponsive. Investigated and identified a tripped internal breaker caused by heat buildup. Cleaned venting system and replaced the controller. Post-installation tests passed under simulated peak load conditions."
+  },
+  {
+    "EventId": "E-5023",
+    "AssetId": "A-1026",
+    "ContractorName": "Brianna Schultz",
+    "RepairStartedAt": "2025-06-09T07:30:00",
+    "RepairEndedAt": "2025-06-09T09:00:00",
+    "Notes": "Visual inspection during routine walkthrough found minor coolant leak beneath CNC machine. Leak traced to degraded O-ring in inline coolant filter. Swapped out O-ring and flushed system to remove debris. No leaks noted post-maintenance; log updated for quarterly check."
+  },
+  {
+    "EventId": "E-5024",
+    "AssetId": "A-1027",
+    "ContractorName": "Victor Lane",
+    "RepairStartedAt": "2025-06-09T10:00:00",
+    "RepairEndedAt": "2025-06-09T12:00:00",
+    "Notes": "Complaint received regarding inconsistent RPMs on spindle motor. Hooked up diagnostic tools and discovered that the frequency drive was supplying unstable output. Replaced frequency drive and recalibrated motor control parameters. Verified consistent speed under various loads."
+  },
+  {
+    "EventId": "E-5025",
+    "AssetId": "A-1028",
+    "ContractorName": "Mei Tanaka",
+    "RepairStartedAt": "2025-06-10T08:15:00",
+    "RepairEndedAt": "2025-06-10T10:30:00",
+    "Notes": "Observed grinding noise in packaging line gear train. Shut down system for safety and found foreign object (metal shaving) lodged between secondary gears. Removed obstruction, inspected for damage, and performed a gear tooth integrity scan. No lasting damage found; resumed operation."
+  },
+  {
+    "EventId": "E-5026",
+    "AssetId": "A-1029",
+    "ContractorName": "Caleb Young",
+    "RepairStartedAt": "2025-06-10T11:00:00",
+    "RepairEndedAt": "2025-06-10T13:00:00",
+    "Notes": "Detected overcurrent fault in robotic weld arm circuit. Traced issue to failing relay in control cabinet. Replaced the faulty relay and upgraded surrounding components to high-heat-resistant models due to nearby thermal activity. Verified normal current draw under full operation."
+  },
+  {
+    "EventId": "E-5027",
+    "AssetId": "A-1030",
+    "ContractorName": "Natalie Brooks",
+    "RepairStartedAt": "2025-06-11T09:00:00",
+    "RepairEndedAt": "2025-06-11T11:00:00",
+    "Notes": "Temperature sensor in thermal chamber was returning erratic readings. Pulled sensor and discovered corrosion at the probe tip. Installed new sealed probe and calibrated using multi-point validation method. Data logging now within ±0.2°C accuracy range."
+  },
+  {
+    "EventId": "E-5028",
+    "AssetId": "A-1031",
+    "ContractorName": "Jared Moore",
+    "RepairStartedAt": "2025-06-11T13:00:00",
+    "RepairEndedAt": "2025-06-11T15:00:00",
+    "Notes": "Operators reported fault code 302 on automated cutter. Troubleshooting revealed misaligned optical sensor due to physical impact. Realigned sensor and reinforced bracket mount. Cleared fault code and ran five operational tests without recurrence of error."
+  },
+  {
+    "EventId": "E-5029",
+    "AssetId": "A-1032",
+    "ContractorName": "Tanya Valdez",
+    "RepairStartedAt": "2025-06-12T07:45:00",
+    "RepairEndedAt": "2025-06-12T09:30:00",
+    "Notes": "Backup battery in uninterruptible power supply was depleted and causing repeated alerts. Replaced battery unit, checked charge controller settings, and ran full discharge/recharge cycle. System now maintains required backup duration under simulated power failure."
+  },
+  {
+    "EventId": "E-5030",
+    "AssetId": "A-1033",
+    "ContractorName": "Logan Price",
+    "RepairStartedAt": "2025-06-12T10:00:00",
+    "RepairEndedAt": "2025-06-12T12:15:00",
+    "Notes": "Preventative maintenance on multi-axis drill. Greased linear guides, cleaned chip collection trays, and verified air blast ports for clogs. Found one blocked nozzle—cleaned and reinstalled. Final test drill confirmed smooth axis movement and clean debris evacuation."
+  },
+  {
+    "EventId": "E-5031",
+    "AssetId": "A-1034",
+    "ContractorName": "Harper Lane",
+    "RepairStartedAt": "2025-06-13T08:00:00",
+    "RepairEndedAt": "2025-06-13T10:30:00",
+    "Notes": "Issue reported with intermittent touchscreen failure on HMI panel. After diagnostics, determined problem was due to a failing capacitive layer from extended exposure to UV. Replaced display unit, updated interface software, and installed a glare shield to extend future component life."
+  },
+  {
+    "EventId": "E-5032",
+    "AssetId": "A-1035",
+    "ContractorName": "Damon Cross",
+    "RepairStartedAt": "2025-06-13T11:00:00",
+    "RepairEndedAt": "2025-06-13T13:15:00",
+    "Notes": "Unusual noise noted from shaft coupling in central mixer. Inspection showed two coupling bolts had sheared from over-torque. Removed damaged bolts, inspected for shaft misalignment, and reinstalled with new bolts at manufacturer-specified torque. Verified alignment with laser tool."
+  },
+  {
+    "EventId": "E-5033",
+    "AssetId": "A-1036",
+    "ContractorName": "Elena Foster",
+    "RepairStartedAt": "2025-06-14T07:30:00",
+    "RepairEndedAt": "2025-06-14T09:45:00",
+    "Notes": "Complaint about fluctuating product fill weights. Calibrated servo drive motor on filling station. Found encoder slightly offset from original mark due to recent mechanical shock. Repositioned encoder, recalibrated volumetric settings, and ran 25 test fills—all within ±1g tolerance."
+  },
+  {
+    "EventId": "E-5034",
+    "AssetId": "A-1037",
+    "ContractorName": "Omar Singh",
+    "RepairStartedAt": "2025-06-14T10:15:00",
+    "RepairEndedAt": "2025-06-14T12:00:00",
+    "Notes": "Inspection of heating element on drying conveyor revealed burnt insulation on lead wires. Shut down circuit, replaced damaged wiring with high-temp silicone leads, and verified insulation resistance. Restarted conveyor and confirmed uniform heat distribution across width."
+  },
+  {
+    "EventId": "E-5035",
+    "AssetId": "A-1038",
+    "ContractorName": "Paige Everett",
+    "RepairStartedAt": "2025-06-15T08:45:00",
+    "RepairEndedAt": "2025-06-15T11:00:00",
+    "Notes": "Robot gripper misalignment led to dropped parts on assembly line. Visual analysis showed loose servo coupling. Removed gripper assembly, reinstalled coupling with threadlocker, and recalibrated pickup alignment via teach pendant. Completed 100-cycle verification without faults."
+  },
+  {
+    "EventId": "E-5036",
+    "AssetId": "A-1039",
+    "ContractorName": "Wesley Brooks",
+    "RepairStartedAt": "2025-06-15T13:00:00",
+    "RepairEndedAt": "2025-06-15T15:00:00",
+    "Notes": "Motor drive unit shut down with fault code 'Overvoltage'. Determined DC bus capacitor had exceeded max charge due to failing feedback loop in drive circuit. Replaced drive, tested braking resistor circuit, and monitored voltage stability through warm-up phase."
+  },
+  {
+    "EventId": "E-5037",
+    "AssetId": "A-1040",
+    "ContractorName": "Camila Reyes",
+    "RepairStartedAt": "2025-06-16T07:30:00",
+    "RepairEndedAt": "2025-06-16T09:30:00",
+    "Notes": "Unscheduled downtime due to tripped emergency stop switch. Diagnosed sticky mechanical latch inside E-stop unit. Replaced the switch with updated spring-release version and tested all machine safety circuits to ensure reset functionality worked as expected."
+  },
+  {
+    "EventId": "E-5038",
+    "AssetId": "A-1041",
+    "ContractorName": "Jordan Kelly",
+    "RepairStartedAt": "2025-06-16T10:00:00",
+    "RepairEndedAt": "2025-06-16T11:45:00",
+    "Notes": "Vibration sensor showed elevated levels on conveyor leg. Mechanical inspection found leg bolts loosened due to settling. Re-leveled unit, tightened bolts with torque wrench, and rechecked vibration levels using handheld meter. Levels dropped to below normal threshold."
+  },
+  {
+    "EventId": "E-5039",
+    "AssetId": "A-1042",
+    "ContractorName": "Alina Novak",
+    "RepairStartedAt": "2025-06-17T08:00:00",
+    "RepairEndedAt": "2025-06-17T09:30:00",
+    "Notes": "Control panel backlight failed, affecting operator visibility during second shift. Diagnosed LED driver board failure. Replaced with newer version featuring thermal protection, and updated panel firmware to reduce brightness flicker. Operator reported clear visuals afterward."
+  },
+  {
+    "EventId": "E-5040",
+    "AssetId": "A-1043",
+    "ContractorName": "Rafael Costa",
+    "RepairStartedAt": "2025-06-17T10:15:00",
+    "RepairEndedAt": "2025-06-17T12:45:00",
+    "Notes": "PLC program failed to load on boot. Found corrupted memory module after power surge. Installed new module, re-flashed program from backup, and tested all I/O points. Also installed surge protector on power input to prevent recurrence. All systems functioning normally."
+  },
+  {
+    "EventId": "E-5041",
+    "AssetId": "A-1044",
+    "ContractorName": "Sandra Liu",
+    "RepairStartedAt": "2025-06-18T08:00:00",
+    "RepairEndedAt": "2025-06-18T10:30:00",
+    "Notes": "Detected delay in output chute gate on packaging line. Mechanical linkage had developed slack due to worn-out pivot bushings. Replaced all four bushings, applied dry film lubricant, and re-tensioned actuator cable. Gate operation now smooth with no lag."
+  },
+  {
+    "EventId": "E-5042",
+    "AssetId": "A-1045",
+    "ContractorName": "Theo Ramsey",
+    "RepairStartedAt": "2025-06-18T11:00:00",
+    "RepairEndedAt": "2025-06-18T13:15:00",
+    "Notes": "Operator reported failure in barcode scanner system. Found USB communication cable had frayed insulation, intermittently cutting power. Replaced cable, verified proper grounding, and reran barcode sync tests with various product SKUs. Confirmed 100% scan accuracy."
+  },
+  {
+    "EventId": "E-5043",
+    "AssetId": "A-1046",
+    "ContractorName": "Kira Munoz",
+    "RepairStartedAt": "2025-06-19T07:45:00",
+    "RepairEndedAt": "2025-06-19T09:30:00",
+    "Notes": "Cooling fan on main inverter was making high-pitched noise. Upon removal, discovered bearing failure caused by dust ingress. Replaced fan with sealed-bearing version and installed fine-mesh filter over vent intake. Monitored temp profile during 2-hour stress test—normal range maintained."
+  },
+  {
+    "EventId": "E-5044",
+    "AssetId": "A-1047",
+    "ContractorName": "Miles Carter",
+    "RepairStartedAt": "2025-06-19T10:15:00",
+    "RepairEndedAt": "2025-06-19T12:45:00",
+    "Notes": "Laser cutter experienced sudden power loss. Root cause was traced to failed thermal fuse inside the power distribution unit. Installed new fuse and verified all voltage rails were restored. Also inspected airflow pathways to prevent future overheating events."
+  },
+  {
+    "EventId": "E-5045",
+    "AssetId": "A-1048",
+    "ContractorName": "Aria Coleman",
+    "RepairStartedAt": "2025-06-20T08:00:00",
+    "RepairEndedAt": "2025-06-20T10:00:00",
+    "Notes": "Hydraulic lift platform was dropping faster than rated speed. Issue identified as an internal leak within the check valve assembly. Disassembled valve, replaced worn seat and spring, flushed entire fluid system, and re-bled lines. Lift now descends within spec."
+  },
+  {
+    "EventId": "E-5046",
+    "AssetId": "A-1049",
+    "ContractorName": "Nico Moretti",
+    "RepairStartedAt": "2025-06-20T11:00:00",
+    "RepairEndedAt": "2025-06-20T13:00:00",
+    "Notes": "Multiple error codes generated by vision inspection system. Diagnostics revealed corrupted config files likely due to unexpected shutdown. Reloaded system parameters from backup, recalibrated all camera fields of view, and ran 50 inspection cycles with no detection anomalies."
+  },
+  {
+    "EventId": "E-5047",
+    "AssetId": "A-1050",
+    "ContractorName": "Jasmine Ford",
+    "RepairStartedAt": "2025-06-21T07:30:00",
+    "RepairEndedAt": "2025-06-21T09:15:00",
+    "Notes": "Preventative cleaning of control cabinets uncovered rodent damage to wiring insulation. Isolated cabinet, replaced damaged wires, installed wire mesh screens on all ventilation openings, and applied repellent spray. Verified insulation continuity and restored cabinet to service."
+  },
+  {
+    "EventId": "E-5048",
+    "AssetId": "A-1051",
+    "ContractorName": "Diego Alvarez",
+    "RepairStartedAt": "2025-06-21T10:00:00",
+    "RepairEndedAt": "2025-06-21T12:30:00",
+    "Notes": "Load cell on weighing platform was returning low values. Physical inspection revealed loose mounting bracket allowing deflection. Tightened all fasteners to torque spec, zeroed platform, and re-calibrated with certified weights. Accuracy now within ±0.1% of expected."
+  },
+  {
+    "EventId": "E-5049",
+    "AssetId": "A-1052",
+    "ContractorName": "Monica Han",
+    "RepairStartedAt": "2025-06-22T08:00:00",
+    "RepairEndedAt": "2025-06-22T10:00:00",
+    "Notes": "Routine motor inspection revealed elevated shaft temperature under load. Used infrared camera to pinpoint friction area on coupling sleeve. Lubricated sleeve and replaced degraded insulation sleeve wrap. Follow-up temp check showed 15°C reduction during operation."
+  },
+  {
+    "EventId": "E-5050",
+    "AssetId": "A-1053",
+    "ContractorName": "Keegan Ward",
+    "RepairStartedAt": "2025-06-22T11:00:00",
+    "RepairEndedAt": "2025-06-22T13:15:00",
+    "Notes": "Power flicker during storm triggered reboot on batching controller. Controller stuck at boot screen due to partial file corruption. Re-imaged device from backup, reloaded PLC config, and verified all I/O modules. System brought back online with no loss of batch data."
+  },
+  {
+    "EventId": "E-5001",
+    "AssetId": "A-1001",
+    "ContractorName": "Kira Munoz",
+    "RepairStartedAt": "2025-05-10T06:00:00",
+    "RepairEndedAt": "2025-05-10T07:00:00",
+    "Notes": "Bearings grinding during spin-up. Lubricated housing and replaced worn shaft sleeve."
+  },
+  {
+    "EventId": "E-5002",
+    "AssetId": "A-1001",
+    "ContractorName": "Noah Fields",
+    "RepairStartedAt": "2025-05-12T07:00:00",
+    "RepairEndedAt": "2025-05-12T08:00:00",
+    "Notes": "Motor temperature irregularities detected. Performed thermal scan and replaced fan unit."
+  },
+  {
+    "EventId": "E-5003",
+    "AssetId": "A-1001",
+    "ContractorName": "Kira Munoz",
+    "RepairStartedAt": "2025-05-14T10:00:00",
+    "RepairEndedAt": "2025-05-14T11:00:00",
+    "Notes": "Vibration anomaly noted. Tightened mounting bolts and adjusted alignment."
+  },
+  {
+    "EventId": "E-5004",
+    "AssetId": "A-1001",
+    "ContractorName": "Jared Moore",
+    "RepairStartedAt": "2025-05-16T06:00:00",
+    "RepairEndedAt": "2025-05-16T07:00:00",
+    "Notes": "Motor temperature irregularities detected. Performed thermal scan and replaced fan unit."
+  },
+  {
+    "EventId": "E-5005",
+    "AssetId": "A-1001",
+    "ContractorName": "Noah Fields",
+    "RepairStartedAt": "2025-05-18T07:00:00",
+    "RepairEndedAt": "2025-05-18T10:00:00",
+    "Notes": "Vibration anomaly noted. Tightened mounting bolts and adjusted alignment."
+  },
+  {
+    "EventId": "E-5006",
+    "AssetId": "A-1001",
+    "ContractorName": "Alice Nguyen",
+    "RepairStartedAt": "2025-05-20T10:00:00",
+    "RepairEndedAt": "2025-05-20T11:00:00",
+    "Notes": "Vibration anomaly noted. Tightened mounting bolts and adjusted alignment."
+  },
+  {
+    "EventId": "E-5007",
+    "AssetId": "A-1001",
+    "ContractorName": "Jared Moore",
+    "RepairStartedAt": "2025-05-22T07:00:00",
+    "RepairEndedAt": "2025-05-22T09:00:00",
+    "Notes": "Vibration anomaly noted. Tightened mounting bolts and adjusted alignment."
+  },
+  {
+    "EventId": "E-5001",
+    "AssetId": "A-1003",
+    "ContractorName": "Camila Reyes",
+    "RepairStartedAt": "2025-05-10T06:00:00",
+    "RepairEndedAt": "2025-05-10T07:00:00",
+    "Notes": "System emitting loud whine. Changed pump and cleaned internal filters."
+  },
+  {
+    "EventId": "E-5002",
+    "AssetId": "A-1003",
+    "ContractorName": "Sandra Liu",
+    "RepairStartedAt": "2025-05-12T08:00:00",
+    "RepairEndedAt": "2025-05-12T09:00:00",
+    "Notes": "Valve stuck in open position. Disassembled actuator and removed debris."
+  },
+  {
+    "EventId": "E-5003",
+    "AssetId": "A-1003",
+    "ContractorName": "Sandra Liu",
+    "RepairStartedAt": "2025-05-14T06:00:00",
+    "RepairEndedAt": "2025-05-14T07:00:00",
+    "Notes": "System emitting loud whine. Changed pump and cleaned internal filters."
+  },
+  {
+    "EventId": "E-5004",
+    "AssetId": "A-1003",
+    "ContractorName": "Marcus O'Neill",
+    "RepairStartedAt": "2025-05-16T08:00:00",
+    "RepairEndedAt": "2025-05-16T10:00:00",
+    "Notes": "Random stall during press. Replaced faulty sensor and retested full cycle."
+  },
+  {
+    "EventId": "E-5005",
+    "AssetId": "A-1003",
+    "ContractorName": "Camila Reyes",
+    "RepairStartedAt": "2025-05-18T06:00:00",
+    "RepairEndedAt": "2025-05-18T09:00:00",
+    "Notes": "System emitting loud whine. Changed pump and cleaned internal filters."
+  },
+  {
+    "EventId": "E-5006",
+    "AssetId": "A-1003",
+    "ContractorName": "Zara Blake",
+    "RepairStartedAt": "2025-05-20T06:00:00",
+    "RepairEndedAt": "2025-05-20T08:00:00",
+    "Notes": "Hydraulic pressure loss mid-cycle. Replaced cracked return hose and bled system."
+  },
+  {
+    "EventId": "E-5007",
+    "AssetId": "A-1003",
+    "ContractorName": "Zara Blake",
+    "RepairStartedAt": "2025-05-22T08:00:00",
+    "RepairEndedAt": "2025-05-22T11:00:00",
+    "Notes": "Random stall during press. Replaced faulty sensor and retested full cycle."
+  },
+  {
+    "EventId": "E-5100",
+    "AssetId": "A-1001",
+    "ContractorName": "Kira Munoz",
+    "RepairStartedAt": "2025-05-02T09:00:00",
+    "RepairEndedAt": "2025-05-02T12:00:00",
+    "Notes": "Motor vibration detected. Replaced worn couplings and rebalanced shaft."
+  },
+  {
+    "EventId": "E-5101",
+    "AssetId": "A-1001",
+    "ContractorName": "Kira Munoz",
+    "RepairStartedAt": "2025-05-13T10:00:00",
+    "RepairEndedAt": "2025-05-13T14:00:00",
+    "Notes": "Slight overheating in motor windings. Cleaned and improved ventilation."
+  },
+  {
+    "EventId": "E-5102",
+    "AssetId": "A-1001",
+    "ContractorName": "Lena Morris",
+    "RepairStartedAt": "2025-05-12T09:00:00",
+    "RepairEndedAt": "2025-05-12T12:00:00",
+    "Notes": "Motor vibration detected. Replaced worn couplings and rebalanced shaft."
+  },
+  {
+    "EventId": "E-5103",
+    "AssetId": "A-1001",
+    "ContractorName": "Tasha Boone",
+    "RepairStartedAt": "2025-05-24T09:00:00",
+    "RepairEndedAt": "2025-05-24T11:00:00",
+    "Notes": "Unexpected stall during startup. Diagnosed and replaced relay."
+  },
+  {
+    "EventId": "E-5104",
+    "AssetId": "A-1003",
+    "ContractorName": "Marcus O'Neill",
+    "RepairStartedAt": "2025-05-30T14:00:00",
+    "RepairEndedAt": "2025-05-30T16:00:00",
+    "Notes": "Erratic motion in ram. Calibrated flow control and cleaned piston."
   }
+
 ]
