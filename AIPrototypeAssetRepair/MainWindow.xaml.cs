@@ -34,34 +34,19 @@ namespace AIPrototypeAssetRepair
                     return;
                 }
 
-                var eventLog = _repairEvents[_currentEventIndex];
-                var asset = _repairService.LoadAssets().FirstOrDefault(a => a.AssetId == eventLog.AssetId);
-
-                if (asset == null)
-                {
-                    txtPrompt.Text = $"❌ Asset not found for AssetId: {eventLog.AssetId}";
-                    return;
-                }
-
                 if (lstRankedContractors.ItemsSource == null || lstRankedContractors.Items.Count == 0)
                 {
                     txtPrompt.Text = "⚠️ Please rank contractors before generating the prompt.";
                     return;
                 }
 
-                // Use top-ranked contractor
-                var top = (RankedContractorViewModel)lstRankedContractors.Items[0];
+                var eventLog = _repairEvents[_currentEventIndex];
+                var topRanked = lstRankedContractors.Items
+                    .Cast<RankedContractorViewModel>()
+                    .Take(3)
+                    .ToList();
 
-                _currentPrompt = AssetHelper.BuildRepairPrompt(
-                asset,
-                    new List<Contractor> { top.Contractor },
-                    eventLog,
-                    _repairService.LoadRepairLogs(),
-                    top.Logs,
-                    lstRankedContractors.Items.Cast<RankedContractorViewModel>()
-                        .Select(vm => (vm.Contractor, vm.Score, vm.Logs))
-                        .ToList()
-                );
+                _currentPrompt = _repairService.BuildPromptForEvent(eventLog, topRanked);
 
                 txtPrompt.Text = _currentPrompt;
                 btnRunAI.IsEnabled = true;
@@ -78,9 +63,6 @@ namespace AIPrototypeAssetRepair
             }
         }
 
-
-
-
         private async void btnRunAI_Click(object sender, RoutedEventArgs e)
         {
             btnRunAI.IsEnabled = false;
@@ -88,7 +70,7 @@ namespace AIPrototypeAssetRepair
 
             try
             {
-                var result = await _repairService.GetBestContractorRecommendationAsync();
+                var result = await _repairService.SendPromptToAIAsync(_currentPrompt);
                 txtOutput.Text = result;
             }
             catch (Exception ex)

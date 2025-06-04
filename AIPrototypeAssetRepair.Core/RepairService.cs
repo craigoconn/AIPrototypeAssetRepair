@@ -27,29 +27,34 @@ public class RepairService
         _logs = JsonLoader.LoadJsonList<RepairLog>("data/repairlog.json");
     }
 
-    public async Task<string> GetBestContractorRecommendationAsync()
-    {
-        var asset = _assets.First();
-        var currentEvent = _events.First();
-        var similarLogs = new List<RepairLog>(); // or implement your similarity search
-
-        var prompt = AssetHelper.BuildRepairPrompt(asset, _contractors, currentEvent, _logs, similarLogs);
-        var response = await SendPromptToAIAsync(prompt);
-        return response.Trim();
-    }
     public List<Asset> LoadAssets() => JsonLoader.LoadJsonList<Asset>("data/assets.json");
     public List<Contractor> LoadContractors() => JsonLoader.LoadJsonList<Contractor>("data/contractors.json");
     public List<RepairEvent> LoadRepairEvents() => JsonLoader.LoadJsonList<RepairEvent>("data/repairevent.json");
     public List<RepairLog> LoadRepairLogs() => JsonLoader.LoadJsonList<RepairLog>("data/repairlog.json");
 
-    public List<RepairLog> FindSimilarLogs(RepairEvent ev, List<RepairLog> allLogs)
+
+    public string BuildPromptForEvent(
+    RepairEvent eventLog,
+    List<RankedContractorViewModel> topRankedViewModels)
     {
-        // Return mock similarity results, or use Semantic Kernel in future
-        return allLogs
-            .Where(log => log.Notes.Contains("motor", StringComparison.OrdinalIgnoreCase))
-            .Take(3)
-            .ToList();
+        var asset = _assets.FirstOrDefault(a => a.AssetId == eventLog.AssetId);
+        if (asset == null) throw new InvalidOperationException($"Asset not found: {eventLog.AssetId}");
+
+        var contractors = topRankedViewModels.Select(vm => vm.Contractor).ToList();
+        var logs = _logs;
+        var rankedTuples = topRankedViewModels.Select(vm => (vm.Contractor, vm.Score, vm.Logs)).ToList();
+        var combinedSimilarLogs = topRankedViewModels.SelectMany(vm => vm.Logs).Distinct().ToList();
+
+        return AssetHelper.BuildRepairPrompt(
+            asset,
+            contractors,
+            eventLog,
+            logs,
+            combinedSimilarLogs,
+            rankedTuples
+        );
     }
+
 
     public async Task<string> SendPromptToAIAsync(string prompt)
     {
@@ -124,12 +129,16 @@ RepairEvent ev)
 
         var results = _contractors
             .Where(c =>
-                (c.BaseLocation == asset.Location ||
-                 _logs.Any(l => l.ContractorName == c.Name && l.AssetId == ev.AssetId)))
+                c.BaseLocation == asset.Location ||
+                _logs.Any(l => l.ContractorName == c.Name && l.AssetId == ev.AssetId))
             .Select(c =>
             {
                 var logs = _logs.Where(l => l.ContractorName == c.Name && l.AssetId == ev.AssetId).ToList();
-                double score = 0.5 + random.NextDouble() * 0.5; // Simulated score 0.5–1.0
+                int logCount = logs.Count;
+
+                // Base score is 0.5, boosted by log count and small random noise
+                double score = 0.5 + Math.Min(0.4, logCount * 0.1) + random.NextDouble() * 0.1;
+
                 return (c, score, logs);
             })
             .OrderByDescending(r => r.score)
