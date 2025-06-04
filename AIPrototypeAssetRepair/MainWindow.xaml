@@ -1,0 +1,24 @@
+﻿<Window x:Class="AIPrototypeAssetRepair.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Asset Repair AI Demo" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,10">
+            <Button x:Name="btnGeneratePrompt" Content="Generate Prompt" Width="150" Margin="0,0,10,0" Click="btnGeneratePrompt_Click"/>
+            <Button x:Name="btnRunAI" Content="Run AI" Width="150" Click="btnRunAI_Click" IsEnabled="False"/>
+        </StackPanel>
+
+        <TextBox x:Name="txtPrompt" Grid.Row="1" TextWrapping="Wrap" AcceptsReturn="True"
+                 VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
+                 Height="200" Margin="0,0,0,10"/>
+
+        <TextBox x:Name="txtOutput" Grid.Row="2" TextWrapping="Wrap" AcceptsReturn="True"
+                 VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>
