@@ -4,6 +4,7 @@ using AIPrototypeAssetRepair.Models;
 using Azure;
 using Azure.AI.Inference;
 using Microsoft.Extensions.AI;
+using Microsoft.Extensions.Configuration;
 public class RepairService
 {
     private IChatClient _client;
@@ -14,7 +15,19 @@ public class RepairService
 
     public RepairService()
     {
-        var githubToken = "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";
+        var config = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appSettings.json", optional: false)
+            .Build();
+
+        string githubToken = config["AI:Token"];
+        string endpoint = config["AI:Endpoint"];
+        string model = config["AI:Model"];
+
+        if (string.IsNullOrEmpty(githubToken) || string.IsNullOrEmpty(endpoint) || string.IsNullOrEmpty(model))
+        {
+            throw new InvalidOperationException("Missing AI configuration in appsettings.json.");
+        }
 
         _client = new ChatCompletionsClient(
             endpoint: new Uri("https://models.inference.ai.azure.com"),
