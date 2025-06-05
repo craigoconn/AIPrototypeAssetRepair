@@ -89,7 +89,7 @@ namespace AIPrototypeAssetRepair
             sb.AppendLine("2. Justify your choice based on skill match, proximity, availability, and repair history.");
             sb.AppendLine("3. Mention whether a single contractor or a team is needed.");
             sb.AppendLine("4. Avoid bullet points or JSON. Respond in plain text format.");
-
+            sb.AppendLine("5. Provide alternative contractors if best one is not available");
             return sb.ToString();
         }
     }

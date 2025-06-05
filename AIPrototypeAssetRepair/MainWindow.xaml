@@ -5,43 +5,70 @@
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <!-- Row 0: Buttons -->
+            <!-- 0: Buttons -->
             <RowDefinition Height="Auto"/>
-            <!-- Row 1: Event Info -->
+            <!-- 1: Current Event -->
+            <RowDefinition Height="Auto"/>
+            <!-- 2: AI Reasoning -->
             <RowDefinition Height="2*"/>
-            <!-- Row 2: Prompt -->
+            <!-- 3: Prompt -->
             <RowDefinition Height="2*"/>
-            <!-- Row 3: Output -->
+            <!-- 4: Output -->
             <RowDefinition Height="*"/>
-            <!-- Row 4: Lists -->
+            <!-- 5: Contractor Panel -->
         </Grid.RowDefinitions>
 
         <!-- Row 0: Buttons -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,10" Grid.Row="0">
             <Button x:Name="btnRankContractors" Content="Rank Contractors" Width="150" Margin="0,0,10,0" Click="btnRankContractors_Click"/>
             <Button x:Name="btnGeneratePrompt" Content="Generate Prompt" Width="150" Margin="0,0,10,0" Click="btnGeneratePrompt_Click"/>
-            <Button x:Name="btnRunAI" Content="Run AI" Width="150" Margin="0,0,10,0" Click="btnRunAI_Click" IsEnabled="False"/>
+            <Button x:Name="btnRunAI" Content="Generate Email" Width="150" Margin="0,0,10,0" Click="btnRunAI_Click" IsEnabled="False"/>
             <Button x:Name="btnBack" Content="← Back" Width="80" Margin="10,0,0,0" Click="btnBack_Click"/>
             <Button x:Name="btnForward" Content="Forward →" Width="80" Margin="5,0,0,0" Click="btnForward_Click"/>
         </StackPanel>
 
         <!-- Row 1: Event Info -->
         <GroupBox Header="Current Repair Event" Grid.Row="1" Margin="0,0,0,10">
-            <TextBlock x:Name="txtCurrentEventInfo" TextWrapping="Wrap" Padding="5"/>
+            <TextBlock x:Name="txtCurrentEventInfo" TextWrapping="Wrap" Padding="5" FontSize="18"/>
         </GroupBox>
 
-        <!-- Row 2: Prompt Text -->
-        <TextBox x:Name="txtPrompt" Grid.Row="2" TextWrapping="Wrap" AcceptsReturn="True"
-                 VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
-                 Margin="0,0,0,10" />
+        <!-- Row 2: AI Reasoning -->
+        <GroupBox Header="AI Reasoning" Grid.Row="2" Margin="0,0,0,10">
+            <TextBox x:Name="txtAIReasoning"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     IsReadOnly="True"
+                     VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Auto"
+                     Height="180"
+                     Padding="5"
+                     FontSize="18" />
+        </GroupBox>
 
-        <!-- Row 3: Output Text -->
-        <TextBox x:Name="txtOutput" Grid.Row="3" TextWrapping="Wrap" AcceptsReturn="True"
-                 VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
-                 Margin="0,0,0,10" />
+        <!-- Row 3: Prompt -->
+        <GroupBox Header="AI Prompt" Grid.Row="3" Margin="0,0,0,10">
+            <TextBox x:Name="txtPrompt"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Auto"
+                     FontSize="18"
+                     Padding="5" />
+        </GroupBox>
 
-        <!-- Row 4: Contractor Ranking Panel -->
-        <Grid Grid.Row="4">
+        <!-- Row 4: Email Output -->
+        <GroupBox Header="Generated Email Output" Grid.Row="4" Margin="0,0,0,10">
+            <TextBox x:Name="txtOutput"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Auto"
+                     FontSize="18"
+                     Padding="5" />
+        </GroupBox>
+
+        <!-- Row 5: Contractor Ranking Panel -->
+        <Grid Grid.Row="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="3*"/>
@@ -50,12 +77,14 @@
             <GroupBox Header="Ranked Contractors" Margin="0,0,10,0">
                 <ListBox x:Name="lstRankedContractors" 
                          DisplayMemberPath="DisplayText"
-                         SelectionChanged="lstRankedContractors_SelectionChanged"/>
+                         SelectionChanged="lstRankedContractors_SelectionChanged"
+                         FontSize="18"/>
             </GroupBox>
 
             <GroupBox Header="Matching Repair Logs" Grid.Column="1">
                 <ListBox x:Name="lstContractorLogs" 
-                         DisplayMemberPath="Notes" />
+                         DisplayMemberPath="Notes"
+                         FontSize="18" />
             </GroupBox>
         </Grid>
     </Grid>

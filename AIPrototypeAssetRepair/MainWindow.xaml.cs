@@ -1,7 +1,6 @@
 ﻿using AIPrototypeAssetRepair.Models;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 
 namespace AIPrototypeAssetRepair
 {
@@ -19,6 +18,7 @@ namespace AIPrototypeAssetRepair
             InitializeComponent();
             _repairService = new RepairService(); // or inject dependencies if you want
             _repairEvents = _repairService.LoadRepairEvents();
+            ShowCurrentEventInfo(_repairEvents[_currentEventIndex]);
         }
 
         private void btnGeneratePrompt_Click(object sender, RoutedEventArgs e)
@@ -91,14 +91,25 @@ namespace AIPrototypeAssetRepair
             }
         }
 
-        private void btnRankContractors_Click(object sender, RoutedEventArgs e)
+        private async void btnRankContractors_Click(object sender, RoutedEventArgs e)
         {
             var currentEvent = _repairEvents[_currentEventIndex];
-            var fakeRanked = _repairService.FakeRankContractors(currentEvent);
+            var dialogue = GenerateFakeAIReasoning(currentEvent);
 
+            txtAIReasoning.Text = "";
+            foreach (var (question, answer) in dialogue)
+            {
+                txtAIReasoning.Text += $"🧠 {question}\n";
+                await Task.Delay(800);
+                txtAIReasoning.Text += $"{answer}\n\n";
+                await Task.Delay(800);
+            }
+
+            // Now do the actual (fake) ranking
+            var fakeRanked = _repairService.FakeRankContractors(currentEvent);
             if (!fakeRanked.Any())
             {
-                txtPrompt.Text = "⚠️ No suitable contractor found.";
+                txtPrompt.Text += "⚠️ No suitable contractor found.";
                 lstRankedContractors.ItemsSource = null;
                 lstContractorLogs.ItemsSource = null;
                 btnRunAI.IsEnabled = false;
@@ -113,9 +124,9 @@ namespace AIPrototypeAssetRepair
             }).ToList();
 
             lstRankedContractors.ItemsSource = viewModels;
-
-            txtPrompt.Text = $"✔️ (Demo) Ranked {viewModels.Count} contractors for event {currentEvent.EventId}.";
+            btnRunAI.IsEnabled = true;
         }
+
 
         private void btnForward_Click(object sender, RoutedEventArgs e)
         {
@@ -153,5 +164,38 @@ namespace AIPrototypeAssetRepair
                                        $"Failure: {ev.FailureDescription}";
             Title = $"Asset Repair AI Demo - Event {ev.EventId} ({_currentEventIndex + 1}/{_repairEvents.Count})";
         }
+
+        private List<(string Question, string Answer)> GenerateFakeAIReasoning(RepairEvent ev)
+        {
+            var asset = _repairService.LoadAssets().FirstOrDefault(a => a.AssetId == ev.AssetId);
+            var contractors = _repairService.LoadContractors();
+            var logs = _repairService.LoadRepairLogs();
+
+            var availableContractors = contractors
+                .Where(c => c.BaseLocation == asset?.Location)
+                .Select(c => c.Name)
+                .ToList();
+
+            var similarLogs = logs
+                .Where(l => l.AssetId == ev.AssetId && l.Notes.Contains("motor", StringComparison.OrdinalIgnoreCase))
+                .Take(2)
+                .ToList();
+
+            return new List<(string, string)>
+    {
+        ("1. Find me all available contractors based on location.",
+         $"=> Found {availableContractors.Count} contractor(s) in {asset?.Location}: {string.Join(", ", availableContractors)}"),
+
+        ("2. Check the incident logs for any similar issues for this asset.",
+         $"=> {similarLogs.Count} matching past repair log(s) found with similar failure descriptions."),
+
+        ("3. Check relevant expertise.",
+         "=> Filtering contractors by skill tags relevant to pumps, motors, electrical faults."),
+
+        ("4. Rank and score the contractors and give me recommendations.",
+         "=> Done. Ranking complete based on log history and estimated repair efficiency.")
+    };
+        }
+
     }
 }

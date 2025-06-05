@@ -32,7 +32,7 @@ public class RepairService
         _client = new ChatCompletionsClient(
             endpoint: new Uri("https://models.inference.ai.azure.com"),
             new AzureKeyCredential(githubToken))
-            .AsIChatClient("grok-3-mini");
+            .AsIChatClient("grok-3");
 
         _assets = JsonLoader.LoadJsonList<Asset>("Data/assets.json");
         _contractors = JsonLoader.LoadJsonList<Contractor>("Data/contractors.json");
@@ -73,14 +73,24 @@ public class RepairService
     {
         try
         {
-            var response = await _client.GetResponseAsync(prompt);
+            var timeoutTask = Task.Delay(TimeSpan.FromSeconds(30));
+            var responseTask = _client.GetResponseAsync(prompt);
+
+            var completed = await Task.WhenAny(responseTask, timeoutTask);
+
+            if (completed == timeoutTask)
+            {
+                return "⚠️ AI request timed out. Check network or endpoint.";
+            }
+
+            var response = await responseTask;
 
             if (string.IsNullOrWhiteSpace(response?.Text))
             {
-                return "⚠️ No response received from the AI model. Please try again.";
+                return "⚠️ No response received from the AI model.";
             }
 
-            return response.Text;
+           return response.Text;
         }
         catch (Exception ex)
         {
@@ -180,7 +190,6 @@ RepairEvent ev)
 
         return 0.0; // fallback if parse fails
     }
-
 
     private double NormalizeDuration(double minutes)
     {
