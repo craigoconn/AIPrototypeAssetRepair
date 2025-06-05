@@ -1,26 +1,302 @@
 [
   {
     "Name": "Alice Nguyen",
-    "BaseLocation": "Factory Alpha",
-    "Skills": [ "Motor Repair", "Diagnostics" ],
+    "BaseLocation": "North",
+    "Skills": [ "Motor Repair", "Diagnostics", "Bearing Replacement", "Cooling Systems", "Vibration Analysis" ],
     "Availability": "2025-05-30T09:00:00"
   },
   {
     "Name": "Bob Smith",
-    "BaseLocation": "Factory Beta",
-    "Skills": [ "Belt Systems", "Welding" ],
+    "BaseLocation": "South",
+    "Skills": [ "Belt Systems", "Welding", "Track Alignment", "Roller Adjustment", "Preventative Maintenance" ],
     "Availability": "2025-05-30T13:00:00"
   },
   {
     "Name": "Carla Reyes",
-    "BaseLocation": "Factory Alpha",
-    "Skills": [ "Motor Repair", "Control Systems" ],
+    "BaseLocation": "North",
+    "Skills": [ "Motor Repair", "Control Systems", "PLC Programming", "Firmware Updates", "Electrical Troubleshooting" ],
     "Availability": "2025-05-30T08:30:00"
   },
   {
     "Name": "Dan Wallace",
-    "BaseLocation": "Factory Gamma",
-    "Skills": [ "Hydraulics", "Safety Systems" ],
+    "BaseLocation": "East",
+    "Skills": [ "Hydraulics", "Safety Systems", "Valve Replacement", "Fluid Flushing", "Pressure Testing" ],
     "Availability": "2025-05-30T07:30:00"
+  },
+  {
+    "Name": "Amanda Blake",
+    "BaseLocation": "West",
+    "Skills": [ "Cooling Systems", "Dust Removal", "Panel Maintenance", "Thermal Management", "Fan Installation" ],
+    "Availability": "2025-06-01T10:00:00"
+  },
+  {
+    "Name": "Devon Grant",
+    "BaseLocation": "South",
+    "Skills": [ "Sensors", "Pneumatics", "Wiring", "Signal Diagnostics", "Air Line Maintenance" ],
+    "Availability": "2025-06-01T14:00:00"
+  },
+  {
+    "Name": "Olivia Martinez",
+    "BaseLocation": "West",
+    "Skills": [ "Hydraulic Systems", "Seal Replacement", "Fluid Management", "Leak Detection", "Cylinder Repair" ],
+    "Availability": "2025-06-02T07:45:00"
+  },
+  {
+    "Name": "Marcus O'Neill",
+    "BaseLocation": "East",
+    "Skills": [ "Servo Motors", "Drive Calibration", "Motor Diagnostics", "Feedback Systems", "Torque Testing" ],
+    "Availability": "2025-06-02T13:00:00"
+  },
+  {
+    "Name": "Sasha Rivera",
+    "BaseLocation": "North",
+    "Skills": [ "Crane Systems", "Pulley Inspection", "Structural Repair", "Bearing Housing", "Tensioning" ],
+    "Availability": "2025-06-03T08:00:00"
+  },
+  {
+    "Name": "Tyler Singh",
+    "BaseLocation": "South",
+    "Skills": [ "Voltage Regulation", "Electrical Panels", "Power Distribution", "Diagnostics", "Load Testing" ],
+    "Availability": "2025-06-03T11:30:00"
+  },
+  {
+    "Name": "Chloe Emerson",
+    "BaseLocation": "West",
+    "Skills": [ "Gear Trains", "Mechanical Alignment", "Backlash Correction", "Drive Systems", "Lubrication" ],
+    "Availability": "2025-06-04T09:00:00"
+  },
+  {
+    "Name": "Noah Fields",
+    "BaseLocation": "North",
+    "Skills": [ "Weatherproofing", "Panel Sealing", "Moisture Detection", "Electrical Continuity", "Surge Prevention" ],
+    "Availability": "2025-06-04T12:30:00"
+  },
+  {
+    "Name": "Zara Blake",
+    "BaseLocation": "East",
+    "Skills": [ "Thermal Imaging", "Electrical Terminals", "Heat Diagnosis", "Preventative Maintenance", "Load Monitoring" ],
+    "Availability": "2025-06-05T08:45:00"
+  },
+  {
+    "Name": "Ethan Clarke",
+    "BaseLocation": "South",
+    "Skills": [ "PLC Configuration", "Software Installation", "User Interface Setup", "Touchscreen Calibration", "Backup Recovery" ],
+    "Availability": "2025-06-05T11:00:00"
+  },
+  {
+    "Name": "Lena Morris",
+    "BaseLocation": "North",
+    "Skills": [ "Pneumatics", "Air Leak Detection", "T-Fitting Repair", "System Integrity Testing", "Compressor Maintenance" ],
+    "Availability": "2025-06-06T07:00:00"
+  },
+  {
+    "Name": "Derrick Han",
+    "BaseLocation": "East",
+    "Skills": [ "Motor Control", "Heat Management", "Breaker Testing", "Controller Replacement", "Load Simulation" ],
+    "Availability": "2025-06-06T10:15:00"
+  },
+  {
+    "Name": "Brianna Schultz",
+    "BaseLocation": "West",
+    "Skills": [ "Coolant Systems", "Leak Repair", "O-Ring Replacement", "Fluid Testing", "System Flushing" ],
+    "Availability": "2025-06-07T08:30:00"
+  },
+  {
+    "Name": "Victor Lane",
+    "BaseLocation": "North",
+    "Skills": [ "Spindle Motors", "RPM Tuning", "Frequency Drives", "Alignment", "Speed Monitoring" ],
+    "Availability": "2025-06-07T11:00:00"
+  },
+  {
+    "Name": "Mei Tanaka",
+    "BaseLocation": "South",
+    "Skills": [ "Gear Inspection", "Foreign Object Removal", "System Cleaning", "Noise Diagnostics", "Preventative Checks" ],
+    "Availability": "2025-06-08T07:30:00"
+  },
+  {
+    "Name": "Caleb Young",
+    "BaseLocation": "West",
+    "Skills": [ "Weld Robotics", "Overcurrent Diagnosis", "Relay Replacement", "High Heat Components", "Circuit Integrity" ],
+    "Availability": "2025-06-08T10:30:00"
+  },
+  {
+    "Name": "Natalie Brooks",
+    "BaseLocation": "East",
+    "Skills": [ "Temperature Sensors", "Calibration", "Probe Replacement", "Thermal Tuning", "Accuracy Testing" ],
+    "Availability": "2025-06-09T09:15:00"
+  },
+  {
+    "Name": "Jared Moore",
+    "BaseLocation": "North",
+    "Skills": [ "Optical Sensors", "Bracket Alignment", "Cutter Systems", "Error Code Diagnostics", "Test Cycle Validation" ],
+    "Availability": "2025-06-09T13:00:00"
+  },
+  {
+    "Name": "Tanya Valdez",
+    "BaseLocation": "South",
+    "Skills": [ "UPS Systems", "Battery Testing", "Backup Power", "Charge Controllers", "Power Cycling" ],
+    "Availability": "2025-06-10T07:00:00"
+  },
+  {
+    "Name": "Logan Price",
+    "BaseLocation": "East",
+    "Skills": [ "Multi-Axis Systems", "Drill Maintenance", "Linear Guide Greasing", "Chip Evacuation", "Air Systems" ],
+    "Availability": "2025-06-10T11:30:00"
+  },
+  {
+    "Name": "Harper Lane",
+    "BaseLocation": "North",
+    "Skills": [ "Touchscreen Diagnostics", "HMI Systems", "UV Damage Mitigation", "Display Installation", "Software Interfaces" ],
+    "Availability": "2025-06-11T09:00:00"
+  },
+  {
+    "Name": "Damon Cross",
+    "BaseLocation": "South",
+    "Skills": [ "Shaft Couplings", "Torque Testing", "Mechanical Fastening", "Alignment Tools", "Noise Diagnosis" ],
+    "Availability": "2025-06-11T13:15:00"
+  },
+  {
+    "Name": "Elena Foster",
+    "BaseLocation": "West",
+    "Skills": [ "Filling Systems", "Servo Calibration", "Encoder Installation", "Volumetric Tuning", "Production Line Optimization" ],
+    "Availability": "2025-06-12T08:00:00"
+  },
+  {
+    "Name": "Omar Singh",
+    "BaseLocation": "East",
+    "Skills": [ "Heating Systems", "Thermal Elements", "Electrical Insulation", "Heat Mapping", "Conveyor Maintenance" ],
+    "Availability": "2025-06-12T11:30:00"
+  },
+  {
+    "Name": "Paige Everett",
+    "BaseLocation": "North",
+    "Skills": [ "Robotics", "Servo Couplings", "Gripper Alignment", "Vision Systems", "Teach Pendant Operation" ],
+    "Availability": "2025-06-13T09:00:00"
+  },
+  {
+    "Name": "Wesley Brooks",
+    "BaseLocation": "South",
+    "Skills": [ "Motor Drives", "Overvoltage Protection", "Brake Resistor Circuits", "Capacitor Testing", "Drive Programming" ],
+    "Availability": "2025-06-13T13:45:00"
+  },
+  {
+    "Name": "Camila Reyes",
+    "BaseLocation": "East",
+    "Skills": [ "Safety Systems", "E-Stop Replacement", "Switch Calibration", "Machine Reset Procedures", "Lockout/Tagout" ],
+    "Availability": "2025-06-14T08:30:00"
+  },
+  {
+    "Name": "Jordan Kelly",
+    "BaseLocation": "West",
+    "Skills": [ "Vibration Monitoring", "Structural Maintenance", "Machine Leveling", "Anchoring Techniques", "Sensor Readings" ],
+    "Availability": "2025-06-14T11:15:00"
+  },
+  {
+    "Name": "Alina Novak",
+    "BaseLocation": "North",
+    "Skills": [ "Control Panels", "LED Backlighting", "Firmware Updates", "Operator Interface Design", "Lighting Systems" ],
+    "Availability": "2025-06-15T09:00:00"
+  },
+  {
+    "Name": "Rafael Costa",
+    "BaseLocation": "South",
+    "Skills": [ "PLC Recovery", "Power Surge Protection", "Module Replacement", "I/O Diagnostics", "System Rebooting" ],
+    "Availability": "2025-06-15T13:30:00"
+  },
+  {
+    "Name": "Sandra Liu",
+    "BaseLocation": "East",
+    "Skills": [ "Mechanical Linkages", "Chute Systems", "Pivot Bushings", "Lubrication", "Actuation Timing" ],
+    "Availability": "2025-06-16T07:45:00"
+  },
+  {
+    "Name": "Theo Ramsey",
+    "BaseLocation": "West",
+    "Skills": [ "Barcode Scanning", "Cable Replacement", "USB Interfaces", "Signal Testing", "Product Tracking" ],
+    "Availability": "2025-06-16T10:15:00"
+  },
+  {
+    "Name": "Kira Munoz",
+    "BaseLocation": "North",
+    "Skills": [ "Cooling Fans", "Bearing Replacement", "Ventilation", "Filter Installation", "Inverter Maintenance" ],
+    "Availability": "2025-06-17T08:00:00"
+  },
+  {
+    "Name": "Miles Carter",
+    "BaseLocation": "South",
+    "Skills": [ "Laser Systems", "Fuse Diagnostics", "Power Supply Repair", "Distribution Panels", "Thermal Safeguards" ],
+    "Availability": "2025-06-17T11:30:00"
+  },
+  {
+    "Name": "Aria Coleman",
+    "BaseLocation": "East",
+    "Skills": [ "Hydraulic Lifts", "Valve Assembly", "Fluid Bleeding", "Descent Control", "System Leak Testing" ],
+    "Availability": "2025-06-18T08:30:00"
+  },
+  {
+    "Name": "Nico Moretti",
+    "BaseLocation": "West",
+    "Skills": [ "Vision Systems", "Configuration Recovery", "Camera Calibration", "Product Recognition", "Software Reloading" ],
+    "Availability": "2025-06-18T12:00:00"
+  },
+  {
+    "Name": "Jasmine Ford",
+    "BaseLocation": "North",
+    "Skills": [ "Rodent Prevention", "Wiring Repair", "Control Cabinet Cleaning", "Insulation Testing", "Facility Safety" ],
+    "Availability": "2025-06-19T07:00:00"
+  },
+  {
+    "Name": "Diego Alvarez",
+    "BaseLocation": "South",
+    "Skills": [ "Weighing Systems", "Load Cell Calibration", "Platform Alignment", "Fastener Torqueing", "Scale Accuracy Tuning" ],
+    "Availability": "2025-06-19T11:00:00"
+  },
+  {
+    "Name": "Monica Han",
+    "BaseLocation": "East",
+    "Skills": [ "Shaft Inspection", "Thermal Cameras", "Friction Analysis", "Lubrication", "Motor Cooling" ],
+    "Availability": "2025-06-20T08:30:00"
+  },
+  {
+    "Name": "Keegan Ward",
+    "BaseLocation": "West",
+    "Skills": [ "Power Cycling", "PLC Flashing", "Data Backup", "Storm Recovery", "System Restoration" ],
+    "Availability": "2025-06-20T13:00:00"
+  },
+  {
+    "Name": "Stella Chen",
+    "BaseLocation": "North",
+    "Skills": [ "Conveyor Drives", "AC Motor Testing", "Controller Logic", "Startup Sequences", "Timer Relays" ],
+    "Availability": "2025-06-21T09:00:00"
+  },
+  {
+    "Name": "Isaac Romero",
+    "BaseLocation": "South",
+    "Skills": [ "Safety Lockouts", "Process Isolation", "Emergency Response", "Mechanical Stops", "Operator Training" ],
+    "Availability": "2025-06-21T14:15:00"
+  },
+  {
+    "Name": "Naomi Glass",
+    "BaseLocation": "East",
+    "Skills": [ "Machine Alignment", "Laser Tools", "Mounting Systems", "Structural Balancing", "Vibration Suppression" ],
+    "Availability": "2025-06-22T08:00:00"
+  },
+  {
+    "Name": "Reed Johnson",
+    "BaseLocation": "West",
+    "Skills": [ "Digital Controls", "Low Voltage Systems", "Panel Wiring", "Component Testing", "Signal Integrity" ],
+    "Availability": "2025-06-22T11:30:00"
+  },
+  {
+    "Name": "Tasha Boone",
+    "BaseLocation": "North",
+    "Skills": [ "Assembly Line Equipment", "Maintenance Logging", "Routine Inspections", "Belt Tensioning", "Visual Diagnostics" ],
+    "Availability": "2025-06-23T07:45:00"
+  },
+  {
+    "Name": "Franklin Cho",
+    "BaseLocation": "South",
+    "Skills": [ "Automation Systems", "IO Modules", "Sensor Integration", "PLC Wiring", "Remote Diagnostics" ],
+    "Availability": "2025-06-23T12:30:00"
   }
 ]

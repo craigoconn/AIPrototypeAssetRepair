@@ -1,8 +1,8 @@
-﻿using System.Configuration;
+using System.Configuration;
 using System.Data;
 using System.Windows;
 
-namespace WpfApp1
+namespace AIPrototypeAssetRepair
 {
     /// <summary>
     /// Interaction logic for App.xaml
