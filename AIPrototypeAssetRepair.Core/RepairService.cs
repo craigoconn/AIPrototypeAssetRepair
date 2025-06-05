@@ -1,4 +1,4 @@
-﻿using AIPrototypeAssetRepair;
+using AIPrototypeAssetRepair;
 using AIPrototypeAssetRepair.Helper;
 using AIPrototypeAssetRepair.Models;
 using Azure;
@@ -21,16 +21,16 @@ public class RepairService
             new AzureKeyCredential(githubToken))
             .AsIChatClient("grok-3-mini");
 
-        _assets = JsonLoader.LoadJsonList<Asset>("data/assets.json");
-        _contractors = JsonLoader.LoadJsonList<Contractor>("data/contractors.json");
-        _events = JsonLoader.LoadJsonList<RepairEvent>("data/repairevent.json");
-        _logs = JsonLoader.LoadJsonList<RepairLog>("data/repairlog.json");
+        _assets = JsonLoader.LoadJsonList<Asset>("Data/assets.json");
+        _contractors = JsonLoader.LoadJsonList<Contractor>("Data/contractors.json");
+        _events = JsonLoader.LoadJsonList<RepairEvent>("Data/repairevent.json");
+        _logs = JsonLoader.LoadJsonList<RepairLog>("Data/repairlog.json");
     }
 
-    public List<Asset> LoadAssets() => JsonLoader.LoadJsonList<Asset>("data/assets.json");
-    public List<Contractor> LoadContractors() => JsonLoader.LoadJsonList<Contractor>("data/contractors.json");
-    public List<RepairEvent> LoadRepairEvents() => JsonLoader.LoadJsonList<RepairEvent>("data/repairevent.json");
-    public List<RepairLog> LoadRepairLogs() => JsonLoader.LoadJsonList<RepairLog>("data/repairlog.json");
+    public List<Asset> LoadAssets() => JsonLoader.LoadJsonList<Asset>("Data/assets.json");
+    public List<Contractor> LoadContractors() => JsonLoader.LoadJsonList<Contractor>("Data/contractors.json");
+    public List<RepairEvent> LoadRepairEvents() => JsonLoader.LoadJsonList<RepairEvent>("Data/repairevent.json");
+    public List<RepairLog> LoadRepairLogs() => JsonLoader.LoadJsonList<RepairLog>("Data/repairlog.json");
 
 
     public string BuildPromptForEvent(
